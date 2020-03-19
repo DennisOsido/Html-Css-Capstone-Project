@@ -1,5 +1,16 @@
-/* Created a Flexbox Header as part of the requirements */
+a {
+  text-decoration: none;
+}
 
+header a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Created a Flexbox Header as part of the requirements to use a Flexbox */
 header {
   width: 100%;
   background-color: rgb(60, 60, 60);
@@ -11,14 +22,8 @@ header ul {
   padding-right: 10%;
 }
 
-header a {
-  color: white;
-  text-decoration: none;
-}
-
 header a:hover {
   color: #ec5242;
-  text-decoration: none;
 }
 
 header li {
@@ -36,4 +41,37 @@ header li {
 
 #i-2 {
   padding-left: 25px;
+}
+
+nav {
+  background-color: white;
+}
+
+nav img {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+}
+
+#navbar-heading {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 35px;
+  color: #ec5242;
+}
+
+#navbar-items li {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 35px 10px;
+}
+
+#navbar-items a {
+  color: #272a31;
+}
+
+#navbar-items a:hover {
+  color: #ec5242;
 }
