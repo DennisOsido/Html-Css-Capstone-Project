@@ -1,0 +1,39 @@
+/* Created a Flexbox Header as part of the requirements */
+
+header {
+  width: 100%;
+  background-color: rgb(60, 60, 60);
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #ec5242;
+  text-decoration: none;
+}
+
+header li {
+  color: white;
+  width: 70px;
+  height: 30px;
+  padding: 5px 0;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+#i-1 {
+  padding-left: 50px;
+}
+
+#i-2 {
+  padding-left: 25px;
+}
