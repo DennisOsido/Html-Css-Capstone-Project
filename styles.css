@@ -160,7 +160,7 @@ nav img {
   padding: 30px 0;
 }
 
-#section-2 h1 {
+#section-2 h2 {
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-weight: 900;
@@ -181,7 +181,7 @@ nav img {
   color: white;
 }
 
-#section-2 h2 {
+#section-2 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 28px;
   font-weight: 700;
@@ -210,7 +210,7 @@ hr.hr2 {
   margin: 10px 0;
 }
 
-#section-2 h3 {
+#section-2 h4 {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   font-weight: lighter;
@@ -219,7 +219,7 @@ hr.hr2 {
   padding: 30px 0;
 }
 
-#section-2 h3:hover {
+#section-2 h4:hover {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   font-weight: bolder;
@@ -247,14 +247,14 @@ hr.hr2 {
   border-radius: 2px;
 }
 
-#section-3 h1 {
+#section-3 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   font-weight: 700;
   padding-bottom: 10px;
 }
 
-#section-3 h2 {
+#section-3 h3 {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 900;
@@ -271,7 +271,7 @@ hr.hr2 {
   background-color: rgb(65, 65, 65);
 }
 
-#footer-1 h1 {
+#footer-1 h2 {
   font-family: "Lato", sans-serif;
   font-size: 28px;
   font-weight: 900;
@@ -298,14 +298,14 @@ hr.hr2 {
   padding-right: 10px;
 }
 
-#footer-2 h1 {
+#footer-2 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 26px;
   font-weight: 700;
   padding-top: 18px;
 }
 
-#footer-2 h2 {
+#footer-2 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -333,7 +333,7 @@ hr.hr2 {
   text-align: center;
 }
 
-#tickets-1 h1 {
+#tickets-1 h2 {
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-weight: 900;
@@ -356,7 +356,7 @@ hr.hr2 {
   display: block;
 }
 
-#tickets-1 h2 {
+#tickets-1-h3 {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 900;
@@ -424,11 +424,11 @@ hr.hr2 {
 }
 
 #tickets-2 {
-  padding: 60px 10% 60px 10%;
+  padding: 60px 10% 50px 10%;
   text-align: center;
 }
 
-#tickets-2 h1 {
+#tickets-2 h2 {
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-weight: 900;
@@ -451,7 +451,7 @@ hr.hr2 {
   display: block;
 }
 
-#tickets-2 h2 {
+#tickets-2-h3 {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 900;
@@ -468,4 +468,153 @@ hr.hr2 {
 
 #tickets-2 i {
   color: #ec5242;
+}
+
+#submit-button {
+  background-color: #ec5242;
+  color: white;
+  padding: 15px 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.empty-heading {
+  display: none;
+}
+
+#about-1 {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  padding: 30px 10% 30px 10%;
+  text-align: center;
+}
+
+#about-1 h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: #ec5242;
+  padding-bottom: 10px;
+}
+
+#about-1-background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:
+    url(https://images.assetsdelivery.com/compings_v2/yaroslavka/yaroslavka1710/yaroslavka171000004.jpg)
+  center center;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+#about-1-paragraph-div {
+  position: relative;
+  margin: 0 15%;
+  width: 70%;
+}
+
+#about-1-paragraph-div p {
+  font-family: "Lato", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 900 !important;
+  color: #272a31;
+  background-color: white;
+  border: solid 2px #d3d3d3;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#about-1 h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #272a31;
+  padding-top: 20px;
+}
+
+#about-1 p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #272a31;
+  padding-top: 5px;
+}
+
+#about-2 {
+  padding: 50px 10% 50px 10%;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#about-2 h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #272a31;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#about-2 p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #272a31;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#about-2-logo-div {
+  position: relative;
+  margin: 0 25%;
+  width: 50%;
+  background-color: white;
+  border: solid 2px #d3d3d3;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#about-2-logo-div img {
+  width: 150px;
+  height: 150px;
+}
+
+#about-3 {
+  padding: 50px 10% 50px 10%;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#about-3 h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #272a31;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#about-3 p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #272a31;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#about-3 img {
+  width: 400px;
+  height: 200px;
+  padding: 0 20px;
 }
