@@ -88,13 +88,22 @@
     </nav>
 
     <nav id="navbar-mobile" class="sticky-top">
-      <div class="row justify-content-between">
+      <div class="row">
         <div class="col">
           <div id="navbar-mobile-dropdown">
-            <button type="button" id="nav-mobile-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button
+              type="button"
+              id="nav-mobile-dropdown-button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
               <i id="burger" class="fa fa-2x fa-bars"></i>
             </button>
-            <div class="dropdown-menu" aria-labelledby="nav-mobile-dropdown-button">
+            <div
+              class="dropdown-menu"
+              aria-labelledby="nav-mobile-dropdown-button"
+            >
               <a class="dropdown-item" href="index.html">Home</a>
               <a class="dropdown-item" href="tickets.html">Tickets</a>
               <a class="dropdown-item" href="about.html">About</a>
@@ -108,14 +117,16 @@
             alt="remote-devcon-2020"
           />
         </div>
-      </div>  
+      </div>
     </nav>
 
     <section id="section-1">
       <div id="section-1-background"></div>
-      <ul class="d-flex">
+      <ul class="d-flex justify-content-start">
         <li>alert("Hello, World!");</li>
         <li>puts "Hello World"</li>
+      </ul>
+      <ul class="d-flex justify-content-start">
         <li>print('Hello, world!')</li>
         <li>std::cout &lt;&lt; "Hello World!";</li>
       </ul>
@@ -132,7 +143,7 @@
     <section id="section-2">
       <h2>Main Program</h2>
       <hr class="hr1" />
-      <div id="section-2-div">
+      <div id="section-2-div-desktop">
         <article class="section-2-card">
           <i class="fa fa-4x fa-bullhorn"></i>
           <h3>Lecture</h3>
@@ -168,13 +179,54 @@
           <p>Compete against other developers in solving coding challenges.</p>
         </article>
       </div>
-      <a href="#"><h4>SEE THE WHOLE PROGRAM</h4></a>
+      <div id="section-2-div-mobile">
+        <article class="section-2-card-mobile">
+          <i class="fa fa-4x fa-bullhorn"></i>
+          <h3>Lecture</h3>
+          <p>
+            Listen to the top developers about the latest trends in programming
+            and development.
+          </p>
+        </article>
+        <article class="section-2-card-mobile">
+          <i class="fa fa-4x fa-cogs"></i>
+          <h3>Exhibition</h3>
+          <p>Watch the leading developers as they show their latest work.</p>
+        </article>
+        <article class="section-2-card-mobile">
+          <i class="fa fa-4x fa-comments"></i>
+          <h3>Forum</h3>
+          <p>
+            Have the time to share your thoughts and opinions with experts for
+            each topic.
+          </p>
+        </article>
+        <article class="section-2-card-mobile">
+          <i class="fa fa-4x fa-keyboard-o"></i>
+          <h3>Workshop</h3>
+          <p>
+            Try creating your own work using the latest languages and
+            frameworks.
+          </p>
+        </article>
+        <article class="section-2-card-mobile">
+          <i class="fa fa-4x fa-code"></i>
+          <h3>Hackathon</h3>
+          <p>Compete against other developers in solving coding challenges.</p>
+        </article>
+      </div>
+      <a href="#"><h4 id="section-2-h4-desktop">SEE THE WHOLE PROGRAM</h4></a>
+      <div id="section-2-h4-mobile" class="text-center">
+        <button type="button" class="btn btn-danger">
+          Join Remote Devcon 2020
+        </button>
+      </div>
     </section>
 
     <section id="section-3">
       <h2 id="section-3-heading">Featured Speakers</h2>
       <hr class="hr1" />
-      <div class="row">
+      <div id="section-3-desktop" class="row">
         <div class="col">
           <div class="d-flex py-4">
             <img
@@ -272,6 +324,43 @@
           </div>
         </div>
       </div>
+      <div id="section-3-mobile">
+        <div class="d-flex py-2">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Yukihiro_Matsumoto.JPG/220px-Yukihiro_Matsumoto.JPG"
+            alt="yukihiro-matsumoto"
+          />
+          <div>
+            <h2>Yukihiro Matsumoto</h2>
+            <h3>Developer: Ruby</h3>
+            <hr class="hr2" />
+            <p>
+              Matsumoto released the first version of the Ruby programming
+              language on 21 December 1995.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex py-2">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bjarne-stroustrup_%28cropped%29.jpg/220px-Bjarne-stroustrup_%28cropped%29.jpg"
+            alt="bjarne-stroustrup"
+          />
+          <div class="d-flex flex-column">
+            <h2>Bjarne Stroustrup</h2>
+            <h3>Developer: C++</h3>
+            <hr class="hr2" />
+            <p>
+              Stroustrup is best known for his work on C++. In 1979, he began
+              developing C++ (initially called "C with Classes").
+            </p>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-primary">
+            More
+          </button>
+        </div>  
+      </div>
     </section>
 
     <footer id="footer-1">
@@ -289,7 +378,8 @@
     <footer id="footer-2">
       <div class="d-flex justify-content-around">
         <div class="d-flex justify-content-around">
-          <i class="fa fa-4x fa-code"></i>
+          <i id="footer-icon-desktop" class="fa fa-4x fa-code"></i>
+          <i id="footer-icon-mobile" class="fa fa-2x fa-code"></i>
           <h2>Global Remote Developer Association</h2>
         </div>
         <div>
