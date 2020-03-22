@@ -849,7 +849,6 @@ hr.hr2 {
   }
 
   tr td {
-    /* padding: 0 0 10px 0 !important; */
     padding: 10px 0 !important;
     margin: 0 0 0 0 !important;
   }
@@ -889,5 +888,49 @@ hr.hr2 {
 
   #tickets-2 p {
     font-size: 16px;
+  }
+
+  #about-1 {
+    padding: 30px 5% 30px 5%;
+  }
+
+  #about-1 h2 {
+    font-size: 38px;
+  }
+
+  #about-1-paragraph-div {
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  #about-1-paragraph-div p {
+    font-size: 16px !important;
+  }
+
+  #about-2 {
+    padding: 30px 5% 30px 5%;
+  }
+
+  #about-2 h2 {
+    font-size: 32px;
+  }
+
+  #about-2-logo-div img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #about-3 {
+    padding: 30px 10% 30px 10%;
+  }
+
+  #about-3 h2 {
+    font-size: 32px;
+  }
+
+  #about-3 img {
+    width: 40vw;
+    height: 20vw;
+    padding: 0 10px;
   }
 }
