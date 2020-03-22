@@ -68,7 +68,7 @@
       </ul>
     </header>
 
-    <nav class="sticky-top">
+    <nav id="navbar-desktop" class="sticky-top">
       <div class="row">
         <div class="col d-flex">
           <img
@@ -85,6 +85,30 @@
           </ul>
         </div>
       </div>
+    </nav>
+
+    <nav id="navbar-mobile" class="sticky-top">
+      <div class="row justify-content-between">
+        <div class="col">
+          <div id="navbar-mobile-dropdown">
+            <button type="button" id="nav-mobile-dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i id="burger" class="fa fa-2x fa-bars"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="nav-mobile-dropdown-button">
+              <a class="dropdown-item" href="index.html">Home</a>
+              <a class="dropdown-item" href="tickets.html">Tickets</a>
+              <a class="dropdown-item" href="about.html">About</a>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <h2 id="navbar-heading-mobile">Remote Devcon 2020</h2>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAArlBMVEXgQAb////fOgDfOADfNADgPwD30MLoeVf//fveMAD+9vLjUR/na0X2ybr42M3hQQD64djvrKD41MjlYzn0vav98u386+X98Orxs6T3zsH++fjeKgDpf2Lsknj2y73kWy365N3ri3Dtm4Xxr5rwqZLiTRfncVDvoo30wLDlYz/kVibsjXHpfFrumoHxq5XlXjPqg2flaUvqhGXnb0jjWzfqi3bphnPndlzsl4LnclOifkz1AAAPf0lEQVR4nN2dB3fiOhOGbUmTWAZslmoMhBZKIEDK3t3N//9jn3svkrHB/t5z7jk3WYqfqI1mRiNBvIMkffk00LRfv35pmjYYHDqdSU9ZjnRdl6r/cqHST9dH3cP+z9uWTiklrqilqSGiHj//2/RGcpXPUBmhpGir3UI1yDACIUUACBOKj5/zQ7eqB6mEUO9d2qrx5AhS2aKclAi7Ta+KTls6oa7s+3RK0tstHZNMyUxblk1ZLqHcmy8oQZxwAUxM6du53KYskVB6+WhRwtt2MSFCjmulvMcqjXB5Vim+Gc8WELrdj0p6sHIIh4efElovDEneX0rprWUQLtctWnzspTJi+nszvv3pbidcfkC5zecLEXV+M+OthN2vaVmjL0lGZz0tH0mozDCuDs9hxKub7J1bCLsGX4Xt5zPCLX21OKE8vwufw3gpbJ0XJdS1bVXzSyIjbQ0Krh0FCSdv9+Qzheiu2HAsRDhe3WB7FhaGfZFmLEJ4uGsH9QX0+HQPwvGJPoTPFCLzYeWEnQV5FJ9gzqrXXrWE+ukRIzAohDlHIx9ht/+4HuoKaJvLjuMi7GyrttGYhLedighf8YN7qCuE1+w9lZ1wOHt8D3UF5J3ZimMm7F4fOYfGRPqsXg5Wwp5QiyHoCy8YvVWMhB21JkPQF9pOSiTU7rVP4hHCg9IIXx9jh+YJyGs5hNK5noAm4rkUwlNdAdkQ8wnntVoloqL7mwnX9NEQmcofi3mENZ1kfAG+3ER4qTug2YqbGwg39Qc0t1OZ62ImYacJgAYiOhQk7AqNADQQ1QwbNYNwtKidLZomtE3faaQT6rua7SayhNup+8V0wnqv9FGREzfhpt4rfVTpa0Ya4RN3QsyDBSjFkZpCOL42ZpZxhVrJ7vAUwq9GDUJb5IuDcNCsQeiIasyEXbVhg9AWqEkRxiRC/btBK2FQuK2zEe4bOAht0YTNYgJhtxn2dpKAxPtpAmG7oX3UFP6OBTTihEzzKCCMvZTtgEhpin20++k4Mz4UN21ihOMtQx9FqD87rV83Vt69mXnvSClPvYAmxncMDG02r/vz6f2awQixXUaM8JQ/zQD+ntzhGEGq9E4/fSDFTPAo4ROD/x7PKz0+wKDhcyoikMhuOEIo9fPtUbxLWHXurAy7GbXDL40QMkwzgEpMwg5J7yojKfjjUzfw41DpBX7spO99aNhrEyaUjvl9FH1XgmcMkD4gtX1xO8ihDwTabsRe3m8RVt+8AL6c0YjXUB8LE2oM1gyeVwOoAAYARJ2Z4tU8smEsSs7sPyNg/og84/o5fTiRkHcxRCgfGXaFTCEtfsmO3wvs51Mcw8pxox2c0YO2bqbJKn06RcfgTBgiZPJcJO9RbpY3AyDLLPG8RMTqMt7c6a3o5wzLiwaX/SDhkGWxF7I9zIXlIcHW2KtL325vQuZ+QfYcm9hd7rK2B7ANzFBBwgvTvpfypOtwELptEiXsS0FC4s4CmRugYCsECCW2fW9FhFpKL8XP5r96vlvijpFNFiFa+I0YIDywuS4qIhxtUZBBcWwrZ+JxR6lvdmYSCsRfEwOEb2zuNcKW5MGtjpX1CPTL/vO/WhlYQN/tH5+dH72QbzYh+vQa0SdUGDe+VRGKLwtKp3B2H22Pjf2SunZWb/msTukU+ZmX2YQB69Qn/GDc+JICmchskpRDL3CwYnQ49AIL21DpPAX+Nce+xB8xwiXbiVbjvbxJutUohxCwO2A9Qmb3UzMI/VXfJZSYVvsGEULLeaFL+DRlBGwKoUCducYlPDE72DxC/ev5/jozE7p7IIdQYp1nAoTyFqN7i+wkVkJoyUHCCXsoxtviy637e47Rs0vYyX1iOgkSsi6GZmWAphDiVYBQZp5JG0TodFOB8eX++xpDKNCeT8jeSZtESP55hDKDi81VgwjtRd8i7HIEtRtEKEyXLiFPSLRJhJbTzCJsc6SWNIkQPTuEEs+BpiYRgiDZhD1mq1toFqFgBr0FzmHYMELNJuQZhs0ixDObkCsVuFGE6LdkEna5jm1BY/YWgtkcI5OQ0RPsvanbHEJzB2UQrrlSoPzksSYQkotJ+JcrlbQsQoAiObq8hPg/g1D6/QhCwIu+yp98xUuI2gbhmO9URTmEABNRHL9zI/ISgioJ4pIvE7EcQjvQueTuqLyEwlQW+Gy2sgjtEN2IO1OXn7Ar8GY8l0IIxHKh8OxLbXET0o7Amy9bCiHaWZ/AtxJbb+QlJJog/uMb7gUJgQS3aMQOdP4jZv0nHpOKn/CXIP6pnhAQ3e6XAY+lHVOQ3pCAV90PzF7zphAh34JfgBAI3nWMB9t5XwRbaxjKRrPitbFqXK6UcVYtRMi1d+InBKrObVvd/1Oiv9YvzFCCSWi0ZueHMAXZixBKC775gosQ0LS1cQ/r+IROYpM5x9mE5rw6Z2EsRMg5I3IQAiG7QFqDRwjY/ggzvTCQByhf8sugFiLkXHWZCYEK89DZgHeP0E7Kks02c8IntqRDm2TPrEUIdfbIof14bISIti6RgpVeG1pOPieih37CL1I+MjtrIULOAzIshICn/UMsVdrLCHWyGy1TA1rR143WKL2z1oMQCMxiidJD7eitu1P7Ez4tDrTVonnx0uCa1lnrQGgs7uvokQep9xFoF8DWL92DHUBhFfuDTGbJnfXhhMbqcIw1yXK/CFlmpovPkOI9ImD6pkUPgC7/QYIr/tGEQD6jSW9S55tEjLLgMPSenOBZNItFH7Ri7fhgQoBoylvXaIiYPTa1U7Uj1qIxO7Uu0e69iU45DycMPaE8+Ewq1A5ba/ZMSB0wDNhZJ3TcKHaivE6Ey/k2edJ3sgaVJNeCMSJbwYL6k/oSTvrTtIXbyWO+pHwvkOmuVy4hpzeIjbC7PqbtbJ1jnmmbNkSP626phCXapaFeqr8kL2luMlaisQiEPncCRk45hOzJQvZDZBGGLdHxZRtvSMco7caHISCqRm616EX/Do/eH8JrdN2ezNTIaugMw9gJK8PW20VLBY3mZawWrCn6LIQCEf5FK+CONtdQQzop5rOwdwjT4z76TmWFYrNRIcKfMr0YQNAsuuxLvZVv1gDYvwyODWP0vb9EtxidXVLZ/jr42owl7XqImqaytiD21zieUj8qC5gcoztJ4/XHZN9UIcJ56d5ElHQPjrKyXu0MQ88XDMJH7PzGcq2m5b8UIuQLkLLt8YGop9iOyHr51P61lyroTK0BPWXd6lLI581ybpSX0Ox8ePcSfnQzPRCI9b9+zDJCmOepKRS34EiAth6d2RMV9CSaMo+JO26ZpUfhbBZtjV7VHG8bf+xJEcRldbEnoOpZCRE6AQs/JOOf3hGVk5rrMeUnHAriiM/ZxufzNlaPnbshMg9NTm2j2p/dXEKp84Mr8AgD0s04fqVRbkDGajB0CAGs/5P8o+a2v3R4ObLdtscdx/8tCSLnkl8g9gQUrxTJDJCgT3u8+Uap0YaSckKs2ZHcuRh/zGwTvgWxUPzQWNbbmmHGOD78QNgZrps8P3dQ3Pk0e5OQL8xdNAaMzFHmFHQIJs4D14UZ3DlRHZNQuVtOlBuSKV7PjzevDS9NQr7IxU2ELev5esWrwfESLnQr+5KhYkvgTTdkX8LCemNGwYc88WZfPtv5pf/ulSMM2DTklBuKTvLmCO9twheeXnNTBi2g+eDMGc4LiZdQsQnl+2WyG7vHm65Z4MzVB9k5b8FTyrNJWdBWQSWLkGcgNomQXFxCnum7SYRWKNY+u8aRYtogQlBFl1D8+395/tDet9iEHKZpgwjtJFabkCOVtTmEIATOAQey6nLf1xhCx33gELJ30+YQOsWQHMIhc93ZxhA6KZ5eXQxmV0ZjCF0fl0vI3k39uhgPJczNEacvYUKZeTatCWFufRpVDBOy26YNIST7KCHzKcRmEAKJ1YliXhKbQejHQ3zCA2M3bQYhncQJWR+4EYTmAeAYIevxIK/m3mMJs8OegcLlAUKZza6pCWFmVUHXnokQMsa73ZW0zoQ0cNtckJBtD+VV96wvoeVjSyJku+LpoYTYI3zNeFayFlMIlyyN6BUEl7cE31vUq9eWMS+COk4jZGpEr0av1Hu6v7y0gHP6o4aaMELIEtPPuVDxXkovgwitUIpVpK7+nqGC1lqsg2aphDTcBBFCPX/2wMkXR91bqccmg3WgTUXvt8jfCQdX08cp/fbJaK3qKKGef6S0osL6fEodhngXeWXsFpanXNsN1MpqJTNrkBZlBRzNGIzfFZS/YiBVe+Q1M+Zp09Q5Pz4PxgkZ7g8A/K31uqPReCgPh0PZlV6+vM82v8f4bzwadSebfqo/Al1jk0TCjVZMsUeMQN22WgtD176jdvlyP/pqflGr1dqadW0yLkOi8SLHSfeurVjMU/B0l/K6EFD6Q5GE+1OSCEetxl1gaSt8OUkGoXho5t1ydjILEyHLxV01VLI9mUyoN++i1cR789IJRaV593SCGj10k0nIm8H/eAFJueEn9U7npt2Xm7RQZBPKb426yhLv0nY86TePL7cNmm3QMXp0ioEwfryxvvID01yE4uCmNMI7ClDGDU1ZhCxemzoIyCUDIpNQXDUCkZ6zGLIJpSasGTR6tyoPoSi/1x6RfGU7HHIIRXlXc0TynuP6yyMUx/1aI5LvPN9mLqE4btcYkaSaMhyE4vC5tohklu+dZiCs73RDVwzudxZCUf/iuT3hXgJ6YnHbMhGabuLaIQJjEIyRULzUzUZFwHhrLyuheFBrtZnCKutVmsyEonKs0ZaYXLv5T8xLKI53dRmMQN6jhXBKIRT1cz0GI8J7jtgXD6EodoQa9FSy5brNlo+wBj0V6CzVJVMGoSjt4aFzKgbeZBdeQlHs9R9n4ABtp7ucSiMU9T150GjE5BKrbFsFoSh2vx8xGoHskiMTFRCK0ia/lEzpfNti+RHFCEVxucqtvV2qMJnHimtVS2h21fsxIvrMbKWVR2is//37MCLydsON9bcQivpgUT0jov3DLQlKNxEajIfFtFJGNL2N72ZCQ503jhpBfDJLE93QP8siNEt4oirWDiDqRwn3uJdBaBYlb7HeMsKKh+jxteD6EFY5hFZlcspWkIwJj9CfSUn5j2URGhppbVQCpNF6sNP4dkhZKpHQ0HKzIzcVoDHr1/xopfROV+USGhoNZnhaqCmNvjlFH4NS8cQKCE31Lm0gBLNjAsKEQPvCvfljUCWEhmRF+/itUprDaebDEkrV3x+awr/1Y1JVhKakUfew/mhv6XRKDdaIjF9Np/j4+Wd96JbdM4OqktCRpI+7T52B9isobXDoKEtZrz4l/n8cQSrtdyKTbgAAAABJRU5ErkJggg=="
+            alt="remote-devcon-2020"
+          />
+        </div>
+      </div>  
     </nav>
 
     <section id="tickets-1">

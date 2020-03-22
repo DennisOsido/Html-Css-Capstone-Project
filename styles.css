@@ -1,3 +1,15 @@
+@media screen and (max-width: 1920px) and (min-width: 768px) {
+  body {
+    max-width: 1920px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 1px) {
+  body {
+    max-width: 767px;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -43,6 +55,12 @@ header li {
   padding-left: 25px;
 }
 
+@media screen and (max-width: 767px) and (min-width: 1px) {
+  header {
+    display: none;
+  }
+}
+
 nav {
   background-color: white;
   width: 100%;
@@ -76,6 +94,57 @@ nav img {
 
 #navbar-items a:hover {
   color: #ec5242;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 768px) {
+  #navbar-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 1px) {
+  #navbar-desktop {
+    display: none;
+  }
+}
+
+#navbar-mobile {
+  padding: 10px;
+  background-color: rgb(240, 240, 240, 0.5);
+}
+
+#navbar-heading-mobile {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-left: 5px;
+  color: #ec5242;
+  background-color: white;
+}
+
+#navbar-mobile img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background-color: white;
+}
+
+#navbar-mobile i {
+  color: #ec5242;
+}
+
+#navbar-mobile button {
+  border: none;
+  background-color: rgb(240, 240, 240, 0.5);
+}
+
+#navbar-mobile button:focus {
+  outline: 0;
+}
+
+#navbar-mobile-dropdown {
+  padding-top: 5px;
 }
 
 #section-1 {
