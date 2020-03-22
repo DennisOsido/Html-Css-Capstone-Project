@@ -802,7 +802,7 @@ hr.hr2 {
   }
 
   #footer-2 {
-    padding: 60px 5% 60px 5%;
+    padding: 40px 5% 40px 5%;
   }
 
   #footer-2 i {
@@ -822,5 +822,72 @@ hr.hr2 {
     font-size: 12px;
     font-weight: 700;
     padding: 10px 0;
+  }
+
+  #tickets-1 {
+    padding: 40px 5% 40px 5%;
+  }
+
+  #tickets-1-div {
+    width: 90%;
+  }
+
+  #tickets-1 h2 {
+    font-size: 32px;
+  }
+
+  #tickets-1 i {
+    padding: 0 10px;
+  }
+
+  #tickets-1-h3 {
+    font-size: 16px;
+  }
+
+  #tickets-1 p {
+    font-size: 16px;
+  }
+
+  tr td {
+    /* padding: 0 0 10px 0 !important; */
+    padding: 10px 0 !important;
+    margin: 0 0 0 0 !important;
+  }
+
+  .tickets-table-heading {
+    font-size: 12px;
+  }
+
+  .tickets-table-item {
+    font-size: 12px;
+  }
+
+  .tickets-table-orange {
+    font-size: 12px;
+  }
+
+  #tickets-2 {
+    padding: 40px 5% 40px 5%;
+    text-align: center;
+  }
+
+  #tickets-2-div {
+    width: 90%;
+  }
+
+  #tickets-2 h2 {
+    font-size: 32px;
+  }
+
+  #tickets-2 i {
+    padding: 0 10px;
+  }
+
+  #tickets-2-h3 {
+    font-size: 16px;
+  }
+
+  #tickets-2 p {
+    font-size: 16px;
   }
 }
