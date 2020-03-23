@@ -3,7 +3,7 @@ HTML and CSS Capstone Project in Microverse
 
 > Annual Remote Developer Convention 2020
 
-[Video of Presentation](https://www.loom.com/share/)
+[Video of Presentation](https://www.loom.com/share/20631592b169408cb148076a0f788820)
 
 ![screenshot](img/capstone-dennis-osido.gif)
 
