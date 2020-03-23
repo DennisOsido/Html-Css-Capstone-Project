@@ -1,6 +1,30 @@
 # Html-Css-Capstone-Project
 HTML and CSS Capstone Project in Microverse
 
+> Annual Remote Developer Convention 2020
+> Remote DevCon 2020
+
+[Video of Presentation](https://www.loom.com/share/)
+
+![screenshot](img/capstone-dennis-osido.gif)
+
+## In this solo project I have: 
+
+### Built Three pages, each with their own Desktop and Mobile version: 
+
+- The Main Page
+- The About Page
+- The Tickets Page
+
+### Each of these pages have versions for 2 different screen sizes: 
+
+- mobile: up to 768px
+- desktop: from 768px
+
+### I did an extra effort and made the page responsive from 1920px all the way to 320px screen width.
+
+### The colors, typographies, and layout of the original design were followed.
+
 # What it does
 It is an HTML page created using HTML, CSS and Bootstrap.
 
