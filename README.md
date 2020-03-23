@@ -44,7 +44,7 @@ The readme format was taken from Mr. Tolulope Olusakinin which is one of our TSE
 Design idea by Cindy Shin in Behance:
 https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
 
-Ancient Filipino Font Downloaded from: 
+Ancient Filipino Font downloaded from: 
 https://www.lexilogos.com/keyboard/font/TagDoc93.ttf
 
 Webfont generated from:
