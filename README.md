@@ -2,7 +2,6 @@
 HTML and CSS Capstone Project in Microverse
 
 > Annual Remote Developer Convention 2020
-> Remote DevCon 2020
 
 [Video of Presentation](https://www.loom.com/share/)
 
