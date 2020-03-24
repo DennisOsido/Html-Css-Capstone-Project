@@ -10,7 +10,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* Created a Flexbox Header as part of the requirements to use a Flexbox */
 header {
   width: 100%;
   background-color: rgb(60, 60, 60);
@@ -974,4 +973,27 @@ hr.hr2 {
     font-size: 13px;
     padding-right: 2px;
   }
+}
+
+.fl {
+  display: flex;
+}
+
+.fl-dir-col {
+  flex-direction: column;
+}
+
+.fl-start {
+  display: flex;
+  justify-content: start;
+}
+
+.fl-end {
+  display: flex;
+  justify-content: end;
+}
+
+.fl-around {
+  display: flex;
+  justify-content: space-around;
 }
