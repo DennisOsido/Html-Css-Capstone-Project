@@ -473,7 +473,7 @@ hr.hr2 {
   position: relative;
 }
 
-.diamond i {
+/* .diamond i {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -481,7 +481,7 @@ hr.hr2 {
   color: white;
   padding-left: 4px;
   padding-top: 3px;
-}
+} */
 
 .tickets-2 {
   padding: 60px 10% 50px 10%;
